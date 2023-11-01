@@ -1,0 +1,278 @@
+/* Reset margin and padding for all elements */
+body{
+    overflow-x: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+    
+}
+
+nav {
+    width: 100%;
+    z-index: 1;
+}
+
+nav span {
+    position: relative;
+    font-weight: 900;
+}
+
+nav a:hover {
+    text-decoration: none;
+}
+
+nav a img {
+    border: 2px solid rgb(249, 249, 249);
+    max-width: 40px;
+    min-width: 40px;
+    max-height: 40px;
+    min-height: 40px;
+    border-radius: 50%;
+}
+
+.contactus{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.side{
+    display: flex;       
+}
+
+.side a{
+    padding-left: 10px;
+    padding-right: 10px; 
+    justify-content: center;
+    text-align: center;
+    font-size: small;
+}
+
+.icon{
+    display: flex;    
+   
+}
+
+.icon img{
+    width: 40px;
+    height: 40px;
+    margin-left: 30px;
+    position: relative;
+}
+
+.side{
+    text-align: center;
+    padding: 20px;
+}
+
+.cont {
+    padding-top: 750px;
+    /* border-radius: 30%; */
+    margin-left: 100px;
+}
+
+/* .carousel-inner{
+    border-radius: 10%;
+} */
+
+.container {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: absolute;
+    text-align: center;
+    
+}
+
+#id{
+    justify-content: center;
+    text-align: center;
+}
+
+#text {
+    border-radius: 300px;
+    /* background-image: url("images/bg3.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 73%;
+    width: 100%; */
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+    flex: 1;
+    margin: 0;
+    padding: 0;
+    color: rgb(0, 0, 0); /* Center the text on the background image and set text color to white */
+}
+
+.image {
+    
+    flex: 1;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.button {
+    align-items: center;
+}
+
+#contactus{
+    margin-left: 40%;
+}
+
+.desktop {
+    display: none;
+}
+
+.mobile {
+    display: block;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+nav span {
+    font-size: 24px;
+}
+
+nav a img {
+    min-width: 5px;
+    min-height: 30px;
+}
+
+.container {
+    text-align: center;
+}
+
+/* Animation for the typing effect */
+h1::after {
+    content: "LETS GET STARTED...";
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 5s steps(20) infinite;
+}
+.carousel-control-prev{
+    /* border: 5px solid orange; */
+    margin-left: 10px;
+}
+
+.cont{
+    /* border: 5px solid red; */
+    margin-left: 2%;
+}
+.carousel-item{
+    /* border: 5px solid greenyellow; */
+    margin-left: 75px;
+}
+
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+
+/* Styles for larger screens (desktop) */
+@media (min-width: 768px) {
+   
+}
+
+
+/* Styles for smaller screens (mobile) */
+@media (max-width: 767px) {
+
+    .carousel-control-prev{
+        overflow:hidden ;
+    }
+
+    *{
+        overflow-x: hidden;
+    }
+
+    .carousel-item{
+        width: 70%; 
+        max-width: 300px;
+        height: auto;
+        justify-content: center;
+    }
+
+    .icon img{
+        width: 30px;
+        height: 30px;
+        justify-content: center;
+        margin-left: 30px;
+    }
+
+     #card{
+        width: 75%; 
+        max-width: 300px;
+        height: 100%;
+        justify-content: center;
+    } 
+
+    #contactus{
+        margin-left: 10%;
+    }
+
+
+    nav span {
+        font-size: 16px;
+    }
+
+    .container {
+        text-align: center;
+        background-image: url("images/mobilebg.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #text {
+        text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+        opacity: 1.5;
+        padding: 10px;
+        color: black;
+        font-size: 15px;
+    }
+
+    #text h1 {
+        font-size: 22px;
+    }
+
+    /* .container button {
+        margin-top: 400px;
+    } */
+
+    .image {
+        display: none;
+    }
+
+    /* .button {
+        margin-top: 10px;
+    } */
+
+    h1::after {
+        animation: typing 6s steps(20) infinite;
+    }
+}
+
+
+
+
